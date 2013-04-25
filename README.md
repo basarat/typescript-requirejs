@@ -18,3 +18,7 @@ This is demonstrated in jsclient_pass_a.ts
 If you must use imports/exports the alternative is what is demonstrated in jsclient_pass_b.
 The issue which this is that your exports / imports must go *outside* the require function call.
 Here you are basically mimicking an internal define call, by a require(any:[]) call.
+
+Word of caution: These export will only work if they are completely sufficient outside the require call below.
+If you need export something "After" the require call then it cannot be done to my knowledge,
+since that call is async

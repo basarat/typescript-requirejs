@@ -1,7 +1,7 @@
 define(["require", "exports", "tsmodule"], function(require, exports, __foo__) {
 
-    exports.x = 123;
     var foo = __foo__;
+    exports.x = 123;
     require([
         'jsmodule'
     ], function (jsmodule) {
