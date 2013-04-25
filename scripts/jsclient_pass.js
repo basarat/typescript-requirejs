@@ -1,4 +1,4 @@
-define(["require", "exports", "tsmodule"], function(require, exports, __foo__) {
+define(["require", "exports", "tsmodule", "jsmodule"], function(require, exports, __foo__) {
     var useme = require("jsmodule");
     useme.say();
     exports.x = 123;

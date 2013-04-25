@@ -29,6 +29,10 @@ Here you are basically mimicking an internal define call, by a require(any:[]) c
 **Permanent solution (please vote)**: 
 https://typescript.codeplex.com/workitem/948
 
+There was a feature pre 0.9.0
+/// <amd-dependency path="jsmodule"/>
+That works and you can see jsclient_pass.ts for that solution.
+
 **Stackoverflow Question**
 http://stackoverflow.com/questions/16213406/typescript-amd-implementation-bad-with-javascript-requirejs
 
