@@ -21,4 +21,5 @@ Here you are basically mimicking an internal define call, by a require(any:[]) c
 
 Word of caution: These export will only work if they are completely sufficient outside the require call below.
 If you need export something "After" the require call then it cannot be done to my knowledge,
-since that call is async
+since the call to load modules for require([]:any) is async and the module export (define()) function
+will return and not wait for this call to finish.
